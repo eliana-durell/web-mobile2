@@ -1,0 +1,12 @@
+body {
+    display: grid;
+    text-align: center;
+}
+img {
+    width: 60vw;
+    margin: 0 auto;
+}
+
+hr {
+    width: 70vw;
+}

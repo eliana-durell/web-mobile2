@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    background-image: url("../assets/side.jpg");
+    background-repeat: repeat-y;
+    background-size: 18vw;
+}
+
+nav {
+    display: flex;
+}
+
+nav p {
+    background-color: lightskyblue;
+    text-align: center;
+    padding: 2vw;
+    margin: 0;
+    border-bottom: 2px solid black;
+    flex-grow: 1;
+    font-size: 1.5em;
+}
+
+main {
+    margin-left: 18vw;
+    display: grid;
+    grid-template-columns: 22vw 22vw;
+    grid-template-rows: 22vw 22vw;
+}
+
+.block {
+    font-size: 3.5vw;
+    background-color: darkgreen;
+    border-radius: 10%;
+    color: plum;
+    margin: 1vw;
+    display:flex;
+
+    transition: background-color 1s ease-in-out 0s;
+}
+
+.block:hover {
+    background-color: purple;
+}
+
+.block p strong {
+    position: relative;
+    top: 45%;
+    right: 15%;
+}
+
+#flower {
+    margin: 0;
+    position: relative;
+    top: 5%;
+    left: 2%;
+    
+    color: lightgreen;
+    text-shadow: 4px 3px 0px yellow; 
+    /* x, y, blur amount */
+    font-size: 15vw;
+}
+
+nav:hover, div:hover {
+    cursor:pointer;
+}
+
+a {
+    height: 5vh;
+    font-size: 1em;
+}
+
+@media screen and (max-width: 600px) and (min-width:500px) {
+    body {
+        background-size: 30vw;
+    }
+    
+    nav p {
+        font-size: 1.2rem;
+    }
+    
+    main {
+        margin-left: 30vw;
+        grid-template-columns: 40vw;
+        grid-template-rows: 40vw 40vw 40vw 40vw;
+    }
+    
+    .block {
+        font-size: 6vw;
+    }
+    
+    .block p strong {
+        right: 2%;
+    }
+    
+    #flower {
+        top: 10%;
+        left: 10%;
+        font-size: 25vw;
+    }   
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background-image: none;
+    }
+    
+    main {
+        margin-left: 5vw;
+        grid-template-columns: 50vw;
+        grid-template-rows: 50vw 50vw 50vw 50vw;
+    }
+
+    .block {
+        font-size: 8vw;
+    }
+    
+    .block p strong {
+        right: 10%;
+    }
+    
+    #flower {
+        top: 7%;
+        left: 5%;
+        font-size: 35vw;
+    }   
+}

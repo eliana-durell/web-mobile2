@@ -1,0 +1,125 @@
+<?php 
+  require_once("assets/inc/header.inc.php");
+?>
+
+    <main class="westBankPage">
+      <h1>West Bank</h1>
+      <h3>Valley of Kings</h3>
+      <section class="mainImgSection">
+        <img src="assets/images/westbank/valleyOfKings/3dmap.jpg" alt="3D map of Valley of Kings">
+      </section>
+      <p>The Valley of Kings was used to bury the pharoahs along with their family and high up royal nobles. 
+        There are 63 tombs and it holds Pharaohs from Thutmos I to Ramses XI. 
+      </p>      
+
+      <h5 class="yellow">Tomb of Ramesses III</h5>
+      <section class="r3-grid yellow">
+        <img class="r3-grid-h" src="assets/images/westbank/valleyOfKings/r3_hallway.jpg" alt="inside Tomb of Ramses III">
+        <img class="r3-grid-v" src="assets/images/westbank/valleyOfKings/r3_people.jpg" alt="inside Tomb of Ramses III">
+        <img class="r3-grid-h" src="assets/images/westbank/valleyOfKings/r3_lineOfPeople.jpg" alt="inside Tomb of Ramses III">
+      </section>
+      <p class="yellow">Ramesses III was the second pharoah in the Twentieth Dynasty. He led the battle against invaders called "the Sea Peoples" who caused destruction
+        to other places. He came out victorous because he had strong military strategies. 
+      </p>
+      
+      <h5>Tomb of Ramesses IV</h5>
+      <section class="r4-grid-1">
+        <img class="r4-grid-h" src="assets/images/westbank/valleyOfKings/r4_byCeiling.jpg" alt="inside Tomb of Ramses IV">
+      </section>
+      <section class="r4-grid-4">
+        <img class="r4-grid-v" src="assets/images/westbank/valleyOfKings/r4_ceiling.jpg" alt="inside Tomb of Ramses IV">
+        <img class="r4-grid-v" src="assets/images/westbank/valleyOfKings/r4_coffin.jpg" alt="inside Tomb of Ramses IV">
+        <img class="r4-grid-v"  src="assets/images/westbank/valleyOfKings/r4_hyro.jpg" alt="inside Tomb of Ramses IV">
+        <img class="r4-grid-v"  src="assets/images/westbank/valleyOfKings/r4_longwall.jpg" alt="inside Tomb of Ramses IV">
+      </section>
+      <p>Ramesses IV was the third pharoah in the Twentieth Dynasty and was the son of Ramesses III. He implemented
+        a building program to increase the size of the workforce and buildings.</p>      
+
+      <h5 class="red">Tomb of Ramesses IX</h5>
+      <section class="grid-2h red">
+        <img src="assets/images/westbank/valleyOfKings/r9_cornertop.jpg" alt="inside Tomb of Ramses IX">
+        <img src="assets/images/westbank/valleyOfKings/r9_hyro.jpg" alt="inside Tomb of Ramses IX">
+      </section>
+      <section class="grid-3v red">
+        <img src="assets/images/westbank/valleyOfKings/r9_divet.jpg" alt="inside Tomb of Ramses IX">
+        <img src="assets/images/westbank/valleyOfKings/r9_pathtocoffin.jpg" alt="inside Tomb of Ramses IX">
+        <img src="assets/images/westbank/valleyOfKings/r9_tophallway.jpg" alt="inside Tomb of Ramses IX">
+      </section>
+      <p class="red">Ramesses IX is the either pharoah in the Twentieth Dynasty and is the grandson of Ramesses III. He was the 
+        longest reigning pharoah after Ramesses III and Ramesses XI.
+      </p>
+
+      <h3>Valley of Queens</h3>
+      <section class="mainImgSection">
+        <img src="assets/images/westbank/valleyofQueens/main.jpg" alt="Valley of Queens">
+      </section>
+      <p>The Valley of Queens was used to bury queens, princes, princesses, and high ranking nobles. During 1560 BC to 1130 BC, burials and tombs were created.</p>
+     
+      <h5 class="yellow">Tomb of Prince Amenherkhepshef</h5>
+      <section class="grid-vhv-btm yellow">
+        <img class="grid-vhv-btm-v" src="assets/images/westbank/valleyofQueens/prince/holdHands.jpg" alt="inside Tomb of Prince Amen Khopshef">
+        <img class="grid-vhv-btm-h" src="assets/images/westbank/valleyofQueens/prince/eagle.jpg" alt="inside Tomb of Prince Amen Khopshef">
+        <img class="grid-vhv-btm-v" src="assets/images/westbank/valleyofQueens/prince/lightHyros.jpg" alt="inside Tomb of Prince Amen Khopshef">
+      </section>
+      <p class="yellow smallText">Amen Khopshef, or Amenherkhepshef, was the ninth son of Ramesses III.</p>
+      
+      <h5>Tomb of Nefertari</h5>
+      <section class="grid-hvh-top">
+        <img class="grid-hvh-top-h" src="assets/images/westbank/valleyofQueens/queen/wall.jpg" alt="inside Tomb of Nefertari">
+        <img class="grid-hvh-top-v" src="assets/images/westbank/valleyofQueens/queen/doorway.jpg" alt="inside Tomb of Nefertari">
+        <img class="grid-hvh-top-h" src="assets/images/westbank/valleyofQueens/queen/topDoorway.jpg" alt="inside Tomb of Nefertari">
+      </section>
+      <section class="grid-vhv-btm">
+        <img class="grid-vhv-btm-v" src="assets/images/westbank/valleyofQueens/queen/staircase.jpg" alt="inside Tomb of Nefertari">
+        <img class="grid-vhv-btm-h" src="assets/images/westbank/valleyofQueens/queen/closeup.jpg" alt="inside Tomb of Nefertari">
+        <img class="grid-vhv-btm-v" src="assets/images/westbank/valleyofQueens/queen/columnSquare.jpg" alt="inside Tomb of Nefertari">
+      </section>
+      <p>Nerfertari, or Nefertiti, was the Queen during the Eighteenth Dynasty. She is known for her radical religous policy. </p>
+
+      <h3 class="red">Mortuary Temple of Hatshepsut</h3>
+      <section class="grid-3v red">
+        <img src="assets/images/westbank/hatTemple/hat_col.jpg" alt="columns">
+        <img src="assets/images/westbank/hatTemple/hat_people.jpg" alt="statues">
+        <img src="assets/images/westbank/hatTemple/hat_place.jpg" alt="Mortuary Temple of Hatshepsut">
+      </section>
+      <p class="red">This was built during the reign of Pharaoh Hatshepsut in the Eighteenth Dynasty. It contains three terraces
+        and Hatshepsut's tomb. 
+      </p>
+
+      <h3>Mortuary Temple of Ramesses III</h3>
+      <section class="grid-vhv-btm">
+        <img class="grid-vhv-btm-v" src="assets/images/westbank/ramses/wallHyro.jpg" alt="hieroglyphs">
+        <img class="grid-vhv-btm-h" src="assets/images/westbank/ramses/placeOutside.jpg" alt="Mortuary Temple of Ramesses III">
+        <img class="grid-vhv-btm-v" src="assets/images/westbank/ramses/insideColumn.jpg" alt="columns">
+      </section>
+      <section class="grid-3h">
+        <img src="assets/images/westbank/ramses/columns.jpg" alt="columns">
+        <img src="assets/images/westbank/ramses/halfcolumn.jpg" alt="columns">
+        <img src="assets/images/westbank/ramses/peopleColumns.jpg" alt="columns">
+      </section>
+      <p>This huge temple is known for its walls that are inscribed with the stories of how Sea People were defeated by Ramesses III.  .</p>
+
+      <h3 class="yellow">The Ramesseum</h3>
+      <section class="grid-3v yellow">
+        <img src="assets/images/westbank/ramesseum/columnRow.jpg" alt="columns">
+        <img src="assets/images/westbank/ramesseum/outsideFar.jpg" alt="The Ramesseum">
+        <img src="assets/images/westbank/ramesseum/columnTop.jpg" alt="columns">
+      </section>
+      <section class="grid-2h yellow">
+        <img src="assets/images/westbank/ramesseum/closePeople.jpg" alt="statues">
+        <img src="assets/images/westbank/ramesseum/wallHyro.jpg" alt="wall">
+      </section>
+      <p class="yellow">This is a funerary temple for Ramesses II. The walls depict scenes of
+         the Battle of Kadesh, the Syrian wars, and the Festival of Min.</p>
+
+      <h3>The Colossi of Memnon</h3>
+      <section class="mainImgSection">
+        <img src="assets/images/westbank/colossi/family.jpg" alt="The Colossi of Memnon">
+      </section>
+      <p>This contains two huge statues of the Pharaoh Amenhotep III. Originally these stood in front of the largest temple, the
+        Mortuary Temple of Amenhotep III, but it was destroyed. </p>
+    </main>
+      
+<?php 
+    require_once("assets/inc/footer.inc.php");
+?>

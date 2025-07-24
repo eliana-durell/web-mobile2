@@ -1,0 +1,20 @@
+/* Eliana Durell
+2/11/25 */
+
+body{
+    text-align: center;
+    margin: 5vh 0;
+    font-size: 18px;
+}
+
+hr {
+    margin: 5vh 0;
+}
+
+input, option {
+    font-size: 14px;
+}
+
+#text {
+    position: relative;
+}

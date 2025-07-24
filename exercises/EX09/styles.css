@@ -1,0 +1,18 @@
+input[type=textarea] {
+    width: 200px;
+    height: 100px;
+}
+
+textarea {
+    display: flex;
+    width: 200px;
+    height: 100px;
+}
+
+.name {
+    color: green;
+}
+
+.time {
+    color: grey;
+}

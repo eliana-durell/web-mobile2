@@ -1,0 +1,1759 @@
+body {
+    margin: 0;
+}
+
+/* 
+Global
+ */
+h1, h2, h3, h4, h5 {
+    font-family: "Newsreader", serif;
+    font-style: normal;
+}
+
+ol, ul, a, button {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+#underline {
+    text-decoration: underline;
+}
+
+p {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+}
+
+ h1 {
+    font-size: 5rem;
+    margin: 1%;
+ }
+
+ h2 {
+    font-size: 3.5rem;
+    margin: 1%;
+ }
+
+h3 {
+    font-size: 3rem;
+    margin: 1%;
+  }
+
+h4 {
+    font-size: 2.5rem;
+    margin: 1%;
+}
+
+h5 {
+    font-size: 1.8rem;
+    margin: 1%;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+main {
+    margin: 0;
+    background-color: #E0E0CE;
+}
+
+
+/* 
+Navigation Bar
+ */
+ header {
+    position: sticky;
+    top: 0;
+    z-index: 1; /* because filters are weird */
+ }
+
+nav {
+    display: flex;
+    overflow: hidden;
+    background-color: #474747;
+}
+
+nav a {
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    padding: 2vw;
+    text-decoration: none;
+    min-width: 100px;
+}
+
+nav a:hover, .dropdown:hover button {
+    background-color: #AD343E;
+}
+
+.dropdown {
+    /* float: right; */
+    overflow: hidden;
+}
+
+.dropdown button {
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 2vw;
+    background-color: #474747;
+}
+
+.links {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  
+}
+
+.links a {
+    float: none;
+    color: black;
+    padding: 2vw;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.links a:hover {
+    background-color: #F2AF29;
+}
+
+.dropdown:hover .links {
+    display: block;
+}
+
+/* 
+Home Page
+ */
+.hero-section {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/landmarks/greatPyramids.jpg");
+    background-size: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-section h1 {
+    padding-top: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    margin: 0;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+
+.hero-section h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin: 0;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+
+.about-us {
+    padding: 2% 15vw;
+}
+
+.about-us h3 {
+    text-align: center;
+}
+
+.itinerary {
+    padding: 5% 20vw 7% 20vw;
+}
+
+.itinerary-homepage {
+    text-align: center;
+    width: 50vw;
+    border: rgb(122, 45, 45) 5px dashed;
+    padding: 3% 5vw 10% 5vw;
+    background-image: url("../images/itineraryPage/mapBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 10px;
+}
+
+.itinerary-homepage ul {
+    text-align: left;
+}
+
+.itinerary-homepage ul li {
+    list-style-type: none;
+}
+
+.itinerary-homepage h3 {
+    padding: 1% 0;
+}
+
+.itineraryHeader {
+    text-align: left;
+}
+/* button */
+.itinerary-homepage a {
+    border: 1px solid black;
+    background-color: white;
+    width: 15vw;
+    height: 5%;
+    padding: 1vw;
+    text-decoration: none;
+    color: black;
+    border-radius: 12px;
+}
+
+.itinerary-homepage a:hover {
+    text-decoration: underline;
+}
+
+.itinerary-homepage a:active {
+    color: #AD343E;
+}
+
+
+/* 
+Footer
+ */
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 2vw 0;
+    background-color: #474747;
+    color: white;
+}
+
+footer ul li {
+    /* padding: 1%; */
+    list-style-type: none;
+}
+
+footer ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 2vw 0;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+
+/* 
+Cairo
+*/
+.cairoHeroSection {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/cairoHomePage/cairoHomePage.jpg");
+    background-size: 100vw;
+    margin-bottom: 5%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cairoHeroSection h1 {
+    padding-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    margin: 0;
+}
+
+.cairo-description {
+    margin: 5% 20vw;
+}
+
+.grid-cairo {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+}
+
+.grid-cairo p
+{
+    width: 40vw;
+    display: block;
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+.grid-cairo img, .grid-cairo a {
+    width: 40vw;
+    display: block;
+    margin: auto;
+    padding-bottom: 1%;
+}
+
+
+/* 
+Luxor
+ */
+ .luxorHeroSection {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/luxorHomePage/luxorHomePage.jpg");
+    background-size: 100vw;
+    margin-bottom: 5%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.luxorHeroSection h1 {
+    padding-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    margin: 0;
+}
+
+.luxor-description {
+    margin: 5% 20vw;
+}
+
+.grid-luxor {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+}
+
+.grid-luxor p {
+    width: 40vw;
+    display: block;
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+.grid-luxor img, .grid-luxor a {
+    width: 40vw;
+    display: block;
+    margin: auto;
+    padding-bottom: 1%;
+}
+
+.luxorActivitySection {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+}
+
+.luxorActivitySection p {
+    width: 40vw;
+    display: block;
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+.luxorActivitySection img, .luxorActivitySection a {
+    width: 40vw;
+    display: block;
+    margin: auto;
+    padding-bottom: 1%;
+}
+
+/* 
+Itinerary Page
+ */
+.smallImg {
+    width: 7vw;
+}
+
+.mediumImg {
+    width: 10vw;
+}
+
+.bigImg {
+    width: 15vw;
+}
+
+.verybigImg {
+    width: 17vw;
+}
+
+/* 
+Landmarks
+ */
+.landmarksPage {
+    text-align: center;
+ }
+
+ .landmarksPage h1, .landmarksPage h4 {
+    margin: 0;
+    padding: 2% 1%;
+ }
+ 
+ 
+ .landmark-grid0 {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0 25vw;
+ }
+
+.stepsToLandmarks {
+    width: 5vw;
+    margin-left: 20vw;
+    margin-top: 2%;
+ }
+
+.mapImg {
+    width: 50vw;
+}
+
+.landmark-grid1 {
+    display: grid;
+    grid-template-columns: auto;
+    padding-top: 2%;
+}
+
+.landmark-grid1 img {
+    width: 40vw;
+}
+
+.landmark-grid1 p {
+    padding: 1% 20vw 0% 20vw;
+}
+
+.steps1to2 {
+    width: 10vw;
+    padding-left: 5vw;
+    padding-bottom: 1%;
+}
+
+.landmark-grid2 {
+    display: grid;
+    grid-template-columns: auto 15vw auto;
+    padding-top: 2%;
+}
+
+.landmark-grid2 img {
+    width: 30vw;
+}
+
+.landmark-grid2 p {
+    padding: 1% 5vw 0% 5vw;
+}
+
+#steps2to2 {
+    width: 15vw;
+    margin-top: 15vw;
+}
+
+.landmark-grid3{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.landmark-grid3 img {
+    width: 30vw;
+}
+
+.landmark-grid3 p {
+    padding: 1% 2vw 0% 2vw;
+}
+
+.steps2to3 {
+    width: 10vw;
+    margin-right: 55vw;
+    padding-bottom: 2%;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+.steps-grid img {
+    width: 15vw;
+    margin: 0 10vw;
+    padding-bottom: 5%;
+}
+
+/* 
+Museums
+ */
+
+.museumsPage {
+    text-align: center;
+}
+
+.museumsPage h1 {
+    margin: 0;
+    padding: 1% 0;
+}
+
+.museumsPage p {
+    padding: 1% 15vw 3% 15vw;
+    margin: 0;
+}
+
+.yellow {
+    background-color: #F2AF29;
+}
+
+.red {
+    background-color: #AD343E;
+    color: white;
+}
+
+/* egpytian */
+ #big-img-little-row {
+	width: 100vw;
+	overflow: hidden;
+}
+
+#map-img {
+	width: 40vw; 
+	display: block;
+	margin: auto;
+}
+
+#pictures-container {
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+	height: 5%;
+	margin: 1% 0;
+}
+
+#pictures-container img {
+    border: solid black 2px;
+}
+
+.picture {
+    width: 7vw;
+	margin: 0 2px;
+}
+
+#egypt-img {
+    width: 30vw;
+    padding: 0 1vw;
+}
+
+#images-left-right {
+    background-color: #F2AF29;
+    padding: 2% 0;
+}
+
+#images-left-right button, .arrow {
+    margin-bottom: 20vw;
+}
+
+#images-left-right button{
+    width: 5vw;
+    height: 3vw;   
+    background-color: white;
+    border-radius: 20px;
+}
+
+.arrow {
+    background-color: white;
+    width: 100%;
+}
+
+/* national */
+#national-h4 {
+    padding: 2% 0 1% 0;
+}
+
+.img-carasol {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 2vw;
+}
+  
+.img-carasol img {
+    padding: 10px;
+    width: 25vw;
+}
+
+/* coptic */
+#coptic-h4 {
+    background-color: #AD343E;
+    margin: 0;
+    padding: 5% 0 1% 0;
+}
+
+#imgGallery {
+    width: 100vw;
+    overflow: hidden;
+    background-color: #AD343E;
+}
+
+#smallImgLeft, #smallImgRight {
+    width: 15vw;
+    padding: 0 1vw 10% 1vw;
+    filter: blur(3px);
+}
+
+#mainImg {
+    width: 40vw;
+}
+
+/*
+Sacred Sites
+*/
+.sacredsitesPage {
+    text-align: center;
+}
+
+.sacredsitesPage h1 {
+    margin: 0;
+    padding: 3% 0;
+}
+
+.sacredsitesPage h4{
+    margin: 0;
+    padding: 3% 0;
+}
+
+.sacredsitesPage p{
+    text-align: center;
+    padding: 2% 20vw;
+    margin: 0;
+}
+
+.grid-ss1 {
+    display: grid;
+    grid-template-columns: 100vw;
+}
+
+.grid-ss1 img{
+    width: 40vw;
+    margin: 0 30vw;
+}
+
+.grid-ss3 {
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    padding: 0 5vw;
+}
+
+.grid-ss3 img {
+    width: 25vw;
+    margin: 1% 2.5vw; /* 30-25 / 2 */
+}
+
+/*
+Cairo Activities
+*/
+.activitiesPage {
+    text-align: center;
+}
+
+.activitiesPage h1 {
+    margin: 0;
+    padding: 1% 0;
+}
+
+.activitiesPage h4 {
+    margin: 0;
+    padding: 1% 0;
+}
+
+.activitiesPage p {
+    padding: 2% 20vw 5% 20vw;
+    margin: 0;
+}
+
+.grid-a2 {
+    display: grid;
+    grid-template-columns: 35vw 35vw;
+    margin: 0 17vw;
+}
+
+.grid-a2 img {
+    width: 30vw;   
+}
+
+.grid-a3 {
+    display: grid;
+    grid-template-columns: 30vw 40vw 30vw;
+    margin: 0 2.5vw;
+}
+
+.grid-a3 img {
+    width: 25vw;
+}
+
+.grid-a3 #horiz {
+    width: 35vw;
+    padding-top: 7%;
+}
+
+/* 
+West Bank
+ */
+ .westBankPage h1, .westBankPage h3, .westBankPage h5 {
+    margin: 0;
+    padding: 1% 0;
+    text-align: center;
+}
+
+.westBankPage p {
+    width: 50vw;
+    padding: 1% 25vw 3% 25vw;
+    margin: 0;
+}
+.mainImgSection{
+    padding: 0 25vw;
+}
+
+.mainImgSection img{
+    width: 50vw;
+}
+/* valley of kings */
+/* ramses 3 */
+.r3-grid {
+    display: grid;
+    grid-template-columns: 31vw 26vw 31vw;
+    padding: 0 6.5vw;
+}
+
+.r3-grid-h {
+    width: 30vw;
+    padding-top: 35%;
+}
+
+.r3-grid-v {
+    width: 25vw;
+}
+/* ramses 4 */
+.r4-grid-4 {
+    display: grid;
+    grid-template-columns: 21vw 21vw 21vw 21vw;
+    padding: 0 8vw;
+}
+
+.r4-grid-v{
+    width: 20vw;
+}
+
+.r4-grid-1 {
+    display: grid;
+    grid-template-columns: 51vw;
+    padding: 1% 24.5vw;
+}
+
+.r4-grid-h {
+    width: 50vw;
+}
+/* ramses 9 */
+.grid-2h {
+    display: grid;
+    grid-template-columns: 32vw 32vw;
+    padding: 1% 17vw;
+}
+
+.grid-2h img {
+    width: 30vw;
+    padding: 0 1vw;
+} 
+
+.grid-3v {
+    display: grid;
+    grid-template-columns: 21vw 21vw 21vw;
+    padding: 1% 18vw;
+}
+
+.grid-3v img {
+    width: 20vw;
+}
+
+/* valley of queens */
+.grid-hvh-top {
+    display: grid;
+    grid-template-columns: 31vw 26vw 31vw;
+    padding: 0 6.5vw;
+}
+.grid-hvh-top-h {
+    width: 30vw;
+    padding-bottom: 35%;
+}
+.grid-hvh-top-v {
+    width: 25vw;
+}
+
+.grid-vhv-btm {
+    display: grid;
+    grid-template-columns: 28vw 34vw 28vw;
+    padding: 0 6.5vw;
+}
+.grid-vhv-btm-h {
+    width: 30vw;
+    padding-top: 32%;
+}
+.grid-vhv-btm-v {
+    width: 25vw;
+}
+/* temple of ramses 3 */
+.grid-3h {
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    padding: 1% 6.5vw;
+}
+
+.grid-3h img {
+    width: 27vw;
+}
+
+/* 
+East Bank
+*/
+.eastBankPage h1, .eastBankPage h3, .eastBankPage h5 {
+    margin: 0;
+    padding: 1% 0;
+    text-align: center;
+}
+
+.eastBankPage p {
+    width: 50vw;
+    padding: 1% 25vw 3% 25vw;
+    margin: 0;
+}
+
+.grid-2v {
+    display: grid;
+    grid-template-columns: 21vw 21vw;
+    padding: 1% 28vw;
+}
+.grid-2v img{
+    width: 20vw;
+    padding: 0 1vw;
+}
+
+/* 
+Work Cited
+*/
+.workCitedPage {
+    padding: 2% 25vw;
+    margin: 0;
+}
+.workCitedPage h1  {
+    margin: 0;
+    padding: 1% 0;
+    text-align: center;
+}
+
+.workCitedPage li {
+    padding: 1%;
+}
+
+/* 
+Grading
+ */
+ .gradingPage {
+    padding: 2% 25vw;
+    margin: 0;
+    text-align: center;
+
+}
+.gradingPage h1  {
+    margin: 0;
+    padding: 1% 0;
+}
+
+
+@media screen and (max-width:1200px) {
+    .hero-section h1 {
+        padding-top: 45vh;
+        font-size: 6rem;
+    }
+    .hero-section h2 {
+        font-size: 3rem;
+    }
+
+}
+
+@media screen and (max-width:960px)  {
+    .steps1to2 {
+        width: 15vw;
+    }
+    #steps2to2 {
+        width: 20vw;
+        margin-top: 15vw;
+    }
+    .steps2to3 {
+        width: 13vw;
+        margin-right: 55vw;
+        padding-bottom: 2%;
+    }
+    .steps-grid img {
+        width: 25vw;
+        margin: 0 10vw;
+        padding-bottom: 5%;
+    }
+    #map-img {
+        width: 50vw; 
+    }
+    .picture {
+        width: 10vw;
+    }
+    #egypt-img {
+        width: 40vw;
+    }
+    #images-left-right {
+        padding: 2% 0;
+    }
+    #images-left-right button, .arrow {
+        margin-bottom: 20vw;
+    }
+    #images-left-right button{
+        width: 8vw;
+        height: 5vw;   
+    }
+    .img-carasol img {
+        padding: 7px;
+        width: 30vw;
+    }
+    #smallImgLeft, #smallImgRight {
+        width: 15vw;
+        padding: 0 1vw 10% 1vw;
+    }
+    #mainImg {
+        width: 50vw;
+    }
+    .grid-ss1 img{
+        width: 50vw;
+        margin: 0 25vw;
+    }
+    .mainImgSection{
+        padding: 0 20vw;
+    }
+    .mainImgSection img{
+        width: 60vw;
+    }
+    .westBankPage p {
+        width: 60vw;
+        padding: 1% 20vw 3% 20vw;
+    }
+    .eastBankPage p {
+        width: 60vw;
+        padding: 1% 20vw 3% 20vw;
+    }
+    .grid-2v {
+        display: grid;
+        grid-template-columns: 31vw 31vw;
+        padding: 1% 18vw;
+    }
+    .grid-2v img{
+        width: 30vw;
+        padding: 0 1vw;
+    }
+    .grid-3v {
+        display: grid;
+        grid-template-columns: 31vw 31vw 31vw;
+        padding: 1% 4.5vw;
+    }
+    .grid-3v img {
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width:840px)  {
+    .hero-section h1 {
+        padding-top: 45vh;
+        font-size: 5.5rem;
+    }
+    .hero-section h2 {
+        font-size: 2.5rem;
+    }
+    .cairoHeroSection h1 {
+        padding-top: 40%;
+    }
+    .luxorHeroSection h1 {
+        padding-top: 40%;
+    }
+    .landmarksPage h1 {
+        font-size: 4rem;
+    }
+    .landmarksPage h4 {
+        font-size: 2.2rem;
+    }
+    .landmark-grid0 {
+        margin: 0 20vw;
+    }
+    .stepsToLandmarks {
+        width: 7vw;
+        margin-left: 25vw;
+     }    
+    .mapImg {
+        width: 60vw;
+    }
+    .landmark-grid1 img {
+        width: 50vw;
+    }
+    .steps1to2 {
+        width: 15vw;
+    }
+    #steps2to2 {
+        width: 20vw;
+        margin-top: 15vw;
+    }
+    .steps2to3 {
+        width: 13vw;
+        margin-right: 55vw;
+        padding-bottom: 2%;
+    }
+    .steps-grid img {
+        width: 25vw;
+        margin: 0 10vw;
+        padding-bottom: 5%;
+    }
+    #map-img {
+        width: 60vw; 
+    }
+        #egypt-img {
+        width: 50vw;
+    }
+    #images-left-right button, .arrow {
+        margin-bottom: 30vw;
+    }
+    #images-left-right button{
+        width: 10vw;
+        height: 6vw;   
+    }
+    .museumsPage h1 {
+        font-size: 4rem;
+    }
+    .museumsPage h3 {
+        font-size: 2.5rem;
+    }
+    .museumsPage h4 {
+        font-size: 2.2rem;
+    }
+    .img-carasol img {
+        padding: 5px;
+        width: 35vw;
+    }
+    .grid-ss1 img{
+        width: 60vw;
+        margin: 0 20vw;
+    }
+    .sacredsitesPage h1 {
+        font-size: 4rem;
+    }
+    .sacredsitesPage h4 {
+        font-size: 2.2rem;
+    }
+    .sacredsitesPage h1 {
+        font-size: 4rem;
+    }
+    .sacredsitesPage h4 {
+        font-size: 2.2rem;
+    }
+    .activitiesPage h1 {
+        font-size: 4rem;
+    }
+    .activitiesPage h4 {
+        font-size: 2.2rem;
+    }
+    .grid-a2 {
+        display: grid;
+        grid-template-columns: 45vw 45vw;
+        margin: 0 7vw;
+    }
+    .grid-a2 img {
+        width: 40vw;   
+    }
+    .activitiesPage p {
+        padding: 2% 10vw 5% 10vw;
+        margin: 0;
+    }
+    .westBankPage h1 {
+        font-size: 4rem;
+    }
+    .westBankPage h3 {
+        font-size: 2.8rem;
+    }
+    .westBankPage h5 {
+        font-size: 1.6rem;
+    }
+    .mainImgSection{
+        padding: 0 15vw;
+    }
+    .mainImgSection img{
+        width: 70vw;
+    }
+    .westBankPage p {
+        width: 70vw;
+        padding: 1% 15vw 3% 15vw;
+    }
+    .eastBankPage h1 {
+        font-size: 4rem;
+    }
+    .eastBankPage h3 {
+        font-size: 2.8rem;
+    }
+    .eastBankPage h5 {
+        font-size: 1.6rem;
+    }
+    .eastBankPage p {
+        width: 70vw;
+        padding: 1% 15vw 3% 15vw;
+    }
+}
+
+@media screen and (max-width:640px) 
+{
+   footer {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .itinerary {
+        display: flex;
+        justify-content: center;
+        padding: 10vw;
+    }
+    .itinerary-homepage {
+        width: 80vw;
+    }
+    .smallImg {
+        width: 10vw;
+    }
+    
+    .mediumImg {
+        width: 13vw;
+    }
+    
+    .bigImg {
+        width: 18vw;
+    }
+    
+    .verybigImg {
+        width: 21vw;
+    }
+    .cairoHeroSection h1 {
+        padding-top: 50%;
+    }
+    .grid-cairo {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+    }
+    .grid-cairo p
+    {
+        width: 60vw;
+    }
+    .grid-cairo img, .grid-cairo a {
+        width: 60vw;
+    }
+    .cairo-description {
+        margin: 5% 10vw;
+        text-align: center;
+    }
+    .luxorHeroSection h1 {
+        padding-top: 50%;
+    }
+    .grid-luxor {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+    }
+    .grid-luxor p
+    {
+        width: 60vw;
+    }
+    .grid-luxor img, .grid-luxor a {
+        width: 60vw;
+    }
+    .luxor-description {
+        margin: 5% 10vw;
+        text-align: center;
+    }
+    .luxorActivitySection p {
+        width: 60vw;
+    }
+    .luxorActivitySection img, .luxorActivitySection a {
+        width: 60vw;
+    }
+    .landmarksPage h1 {
+        font-size: 3rem;
+    }
+    .landmarksPage h4 {
+        font-size: 2rem;
+    }
+    .landmark-grid0 {
+        margin: 0 15vw;
+    }
+    .stepsToLandmarks {
+        width: 10vw;
+        margin-left: 30vw;
+     }  
+    .mapImg {
+        width: 70vw;
+    }
+    .landmark-grid1 img {
+        width: 60vw;
+    }
+    .steps1to2 {
+        width: 20vw;
+        padding-left: 5vw;
+    }
+    .landmark-grid2 {
+        display: grid;
+        grid-template-columns: auto;
+        padding-top: 2%;
+    }
+    .landmark-grid2 img {
+        width: 60vw;
+    }
+    .landmark-grid2 p {
+        padding: 1% 10vw 0% 10vw;
+    }
+    #steps2to2 {
+        width: 30vw;
+        margin: 0;
+        display: block;
+        margin: 0 auto;
+    }
+    .steps2to3 {
+        width: 17vw;
+        margin-right: 0;
+    }
+    .landmark-grid3{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        padding-top: 2%;
+    }
+    .landmark-grid3 img {
+        width: 60vw;
+    }
+    .landmark-grid3 p {
+        padding: 1% 10vw 0% 10vw;
+    }
+    .steps-grid {
+        display: none;
+    }
+    #map-img {
+        width: 70vw; 
+    }
+    .picture {
+        width: 12vw;
+    }
+    #egypt-img {
+        width: 60vw;
+    }
+    #images-left-right {
+        padding: 2% 0;
+    }
+    #images-left-right button, .arrow {
+        margin-bottom: 40vw;
+    }
+    #images-left-right button{
+        width: 12vw;
+        height: 7vw;   
+    }
+    .museumsPage h1 {
+        font-size: 3rem;
+    }
+    .museumsPage h3 {
+        font-size: 2.2rem;
+    }
+    .museumsPage h4 {
+        font-size: 2rem;
+    }
+    .img-carasol img {
+        padding: 4px;
+        width: 40vw;
+    }
+    #imgGallery {
+        display: grid;
+        grid-template-columns: 100vw;
+    }
+    #smallImgLeft, #smallImgRight {
+        width: 30vw;
+        padding: 2vw 35vw;
+    }
+    #mainImg {
+        width: 70vw;
+        padding: 0 15vw
+    }
+    .grid-ss1 img{
+        width: 70vw;
+        margin: 0 15vw;
+    }
+    .grid-ss3 {
+        display: grid;
+        grid-template-columns: 100vw;
+        padding: 0;
+    }
+    .grid-ss3 img {
+        width: 50vw;
+        margin: 0; 
+    }
+    .sacredsitesPage h1 {
+        font-size: 4rem;
+    }
+    .sacredsitesPage h4 {
+        font-size: 2.2rem;
+    }
+    .activitiesPage h1 {
+        font-size: 4rem;
+    }
+    .activitiesPage h4 {
+        font-size: 2.2rem;
+    }
+    .grid-a3 {
+        display: grid;
+        grid-template-columns: 100vw;
+        margin: 0;
+    }
+    .grid-a3 img {
+        width: 70vw;
+        padding: 0 15vw;
+    }
+    .grid-a3 #horiz {
+        width: 70vw;
+        padding: 7% 15vw;
+    }
+    .westBankPage h1 {
+        font-size: 3rem;
+    }
+    .westBankPage h3 {
+        font-size: 2.5rem;
+    }
+    .westBankPage h5 {
+        font-size: 1.5rem;
+    }
+    .mainImgSection{
+        padding: 0 12.5vw;
+    }
+    .mainImgSection img{
+        width: 75vw;
+    }
+    .westBankPage p {
+        width: 75vw;
+        padding: 1% 12.5vw 3% 12.5vw;
+    }
+    .r3-grid {
+        display: grid;
+        grid-template-columns: 100vw;
+        padding: 0;
+    }
+    .r3-grid-h {
+        width: 60vw;
+        padding: 2% 20vw;
+    }
+    .r3-grid-v {
+        width: 50vw;
+        padding: 2% 25vw;
+    }
+    .r4-grid-4 {
+        display: grid;
+        grid-template-columns: 100vw;
+        padding: 0 12.5vw;
+    }
+    .r4-grid-v{
+        width: 75vw;
+        padding: 2% 0;
+    }
+    .r4-grid-1 {
+        display: grid;
+        grid-template-columns: 75vw;
+        padding: 1% 12.5vw;
+    }
+    .r4-grid-h {
+        width: 75vw;
+    }
+    .grid-2h {
+        display: grid;
+        grid-template-columns: 100vw;
+        padding: 0 15vw;
+    }
+    .grid-2h img {
+        width: 70vw;
+        padding: 2% 0;
+    } 
+    .grid-3v {
+        display: grid;
+        grid-template-columns: 100vw;
+        padding: 0 15vw;
+    }
+    .grid-3v img {
+        width: 70vw;
+        padding: 2% 0;
+    }
+    .grid-hvh-top {
+        display: grid;
+        grid-template-columns: 100vw;
+        padding: 0 15vw;
+    }
+    .grid-hvh-top-h {
+        width: 70vw;
+        padding: 2% 0;
+    }
+    .grid-hvh-top-v {
+        width: 70vw;
+    }
+    .grid-vhv-btm {
+        display: grid;
+        grid-template-columns: 100vw;
+        padding: 0 15vw;
+    }
+    .grid-vhv-btm-h {
+        width: 70vw;
+        padding: 2% 0;
+    }
+    .grid-vhv-btm-v {
+        width: 70vw;
+    }
+    .grid-3h {
+        display: grid;
+        grid-template-columns: 100vw;
+        padding: 0 15vw;
+    }
+    .grid-3h img {
+        width: 70vw;
+        padding: 2% 0;
+    }
+    .eastBankPage h1 {
+        font-size: 3rem;
+    }
+    .eastBankPage h3 {
+        font-size: 2.5rem;
+    }
+    .eastBankPage h5 {
+        font-size: 1.5rem;
+    }
+    .eastBankPage p {
+        width: 75vw;
+        padding: 1% 12.5vw 3% 12.5vw;
+    }
+    .grid-2v {
+        display: grid;
+        grid-template-columns: 100vw;
+        padding: 0 15vw;
+    }
+    .grid-2v img{
+        width: 70vw;
+        padding: 2% 0;
+    }
+    .sacredsitesPage p{
+        text-align: center;
+        padding: 2% 15vw;
+        margin: 0;
+    }
+    .workCitedPage {
+        padding: 2% 10vw;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:480px) 
+{
+    nav {
+        display: grid;
+        grid-template-columns: 35vw 35vw 35vw;
+
+    }
+    .hero-section h1 {
+        padding-top: 40vh;
+        font-size: 5.5rem;
+    }
+    .hero-section h2 {
+        text-align: center;
+    }
+
+   footer {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .itinerary {
+        display: flex;
+        justify-content: center;
+        padding: 3vw;
+    }
+    .itinerary-homepage {
+        width: 100vw;
+    }
+    .smallImg {
+        width: 14vw;
+    }
+    
+    .mediumImg {
+        width: 17vw;
+    }
+    
+    .bigImg {
+        width: 22vw;
+    }
+    
+    .verybigImg {
+        width: 25vw;
+    }
+    .cairoHeroSection h1 {
+        padding-top: 80%;
+        font-size: 6.5rem;
+    }
+    .grid-cairo {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+    }
+    .grid-cairo p
+    {
+        width: 80vw;
+    }
+    .grid-cairo img, .grid-cairo a {
+        width: 80vw;
+    }
+    .cairo-description {
+        margin: 5% 10vw;
+        text-align: center;
+    }
+    
+    .luxorHeroSection h1 {
+        padding-top: 80%;
+        font-size: 6.5rem;
+    }
+    .grid-cairo {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+    }
+    .grid-luxor p
+    {
+        width: 80vw;
+    }
+    .grid-luxor img, .grid-luxor a {
+        width: 80vw;
+    }
+    .luxor-description {
+        margin: 5% 10vw;
+        text-align: center;
+    }
+    .luxorActivitySection p {
+        width: 80vw;
+    }
+    .luxorActivitySection img, .luxorActivitySection a {
+        width: 80vw;
+    }
+    .landmarksPage h1 {
+        font-size: 2rem;
+    }
+    .landmarksPage h4 {
+        font-size: 1.6rem;
+    }
+    .landmark-grid0 {
+        margin: 0 10vw;
+    }
+    .stepsToLandmarks {
+        width: 15vw;
+        margin-left: 30vw;
+     }  
+    .mapImg {
+        width: 80vw;
+    }
+    .landmark-grid1 img {
+        width: 70vw;
+    }
+    .steps1to2 {
+        width: 25vw;
+        padding-left: 5vw;
+    }
+    #map-img {
+        width: 80vw; 
+    }
+    .picture {
+        width: 15vw;
+    }
+    #egypt-img {
+        width: 65vw;
+    }
+    .museumsPage h1 {
+        font-size: 2rem;
+    }
+    .museumsPage h3 {
+        font-size: 1.8rem;
+    }
+    .museumsPage h4 {
+        font-size: 1.6rem;
+    }
+    .img-carasol img {
+        padding: 3px;
+        width: 50vw;
+    }
+    #imgGallery {
+        display: grid;
+        grid-template-columns: 100vw;
+    }
+    #smallImgLeft, #smallImgRight {
+        width: 35vw;
+        padding: 2vw 32.5vw;
+    }
+    #mainImg {
+        width: 80vw;
+        padding: 0 10vw
+    }
+    .grid-ss1 img{
+        width: 80vw;
+        margin: 0 10vw;
+    }
+    .grid-ss3 {
+        display: grid;
+        grid-template-columns: 100vw;
+        padding: 0;
+    }
+    .grid-ss3 img {
+        width: 60vw;
+        margin: 0; 
+    }
+    .sacredsitesPage h1 {
+        font-size: 3rem;
+    }
+    .sacredsitesPage h4 {
+        font-size: 1.6rem;
+        padding: 5%;
+    }
+    .activitiesPage h1 {
+        font-size: 3rem;
+    }
+    .activitiesPage h4 {
+        font-size: 1.6rem;
+        padding: 5%;
+    }
+    .westBankPage h3 {
+        padding: 2%;
+    }
+    .westBankPage h5 {
+        padding: 5%;
+    }
+    .mainImgSection{
+        padding: 0 10vw;
+    }
+    .mainImgSection img{
+        width: 80vw;
+    }
+    .westBankPage p {
+        width: 80vw;
+        padding: 1% 10vw 3% 10vw;
+    }
+    .r3-grid {
+        display: grid;
+        grid-template-columns: 100vw;
+        padding: 0;
+    }
+    .r3-grid-h {
+        width: 70vw;
+        padding: 2% 15vw;
+    }
+    .r3-grid-v {
+        width: 60vw;
+        padding: 2% 20vw;
+    }
+    .r4-grid-4 {
+        display: grid;
+        grid-template-columns: 100vw;
+        padding: 0 7.5vw;
+    }
+    .r4-grid-v{
+        width: 85vw;
+        padding: 2% 0vw;
+    }
+    .r4-grid-1 {
+        display: grid;
+        grid-template-columns: 85vw;
+        padding: 1% 7.5vw;
+    }
+    .r4-grid-h {
+        width: 85vw;
+    }
+    .grid-2h {
+        display: grid;
+        grid-template-columns: 100vw;
+        padding: 0 7.5vw;
+    }
+    .grid-2h img {
+        width: 85vw;
+        padding: 2% 0;
+    } 
+    .grid-3v {
+        display: grid;
+        grid-template-columns: 100vw;
+        padding: 0 7.5vw;
+    }
+    .grid-3v img {
+        width: 85vw;
+        padding: 2% 0;
+    }
+    .grid-hvh-top {
+        display: grid;
+        grid-template-columns: 100vw;
+        padding: 0 7.5vw;
+    }
+    .grid-hvh-top-h {
+        width: 85vw;
+        padding: 2% 0;
+    }
+    .grid-hvh-top-v {
+        width: 85vw;
+    }
+    .grid-vhv-btm {
+        display: grid;
+        grid-template-columns: 100vw;
+        padding: 0 7.5vw;
+    }
+    .grid-vhv-btm-h {
+        width: 85vw;
+        padding: 2% 0;
+    }
+    .grid-vhv-btm-v {
+        width: 85vw;
+    }
+    .grid-3h {
+        display: grid;
+        grid-template-columns: 100vw;
+        padding: 0 7.5vw;
+    }
+    .grid-3h img {
+        width: 85vw;
+        padding: 2% 0;
+    }
+    .eastBankPage h3 {
+        padding: 2%;
+    }
+    .eastBankPage h5 {
+        padding: 5%;
+    }
+    .eastBankPage p {
+        width: 80vw;
+        padding: 1% 10vw 3% 10vw;
+    }
+    .sacredsitesPage p{
+        text-align: center;
+        padding: 2% 10vw;
+        margin: 0;
+    }
+}
+
+/* 
+red AD343E
+yellow  F2AF29
+eggshell    E0E0CE
+black   
+grey    474747
+ */

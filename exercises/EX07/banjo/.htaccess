@@ -1,0 +1,15 @@
+# from class
+# ShibRedirectToSSL 443
+# AuthType shibboleth
+# ShibRequireSession on
+# require shib-attr ritEduAffiliation StudentWorker
+# require shib-attr ritEduMemberOfUid rit-section-2245-iste-240-01
+
+ShibRedirectToSSL 443 
+AuthType shibboleth 
+ShibRequireSession on
+
+# You would likely want to remove Employee and Alumni, possibly adding a new shib-attr for your own username
+require shib-attr ritEduAffiliation Student
+require shib-attr egd1486 
+# to test go into a private window and go to the file path and try to access 
