@@ -1,0 +1,205 @@
+/* ============================================== */
+/* Base Styles                                    */
+/* ============================================== */
+main {
+    margin: 15vh 10vw;
+}
+
+h2, h3 {
+    color: #EFB3B3;
+    margin: clamp(10px, 2vh, 30px) 0;
+}
+
+/* ============================================== */
+/* Class/ID Selectors                             */
+/* ============================================== */
+/* Heading styles */
+.big-pink {
+    color: #EFB3B3;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.big-white {
+    color: white;
+}
+
+/* Example styles */
+.example, #text-example {
+    margin: clamp(30px, 6vh, 70px) 0;
+}
+
+.example img {
+    width: 60vw;
+    display: block;
+    margin: 0 auto;
+}
+
+.interactives {
+    margin: clamp(30px, 6vh, 70px) 0;
+}
+
+.example p, .interactives p {
+    margin: 20px auto;
+}
+.ex-grid {
+    display: flex;
+}
+
+.ex-grid img {
+    width: 25vw;
+}
+
+/* Interative examples */
+.interactives img {
+    width: 100%;
+    margin: 20px auto;
+    display: none;
+}
+
+.one, .two {
+    display: none;
+    height: 100px;
+    padding-top: 50px;
+    margin: auto;
+    background-color: #222222;
+    text-align: center;
+}
+
+.one {
+    color: #1F2E20;
+}
+
+.good.one {
+    color: #EFB3B3;
+}
+
+.two {
+    color: #981414;
+    background-color: #1F2E20;
+}
+
+.good.two {
+    color: #222222;
+    background-color: #BFCEA6;
+}
+
+.display, img.display {
+    display: block;
+    margin-top: 2%;
+}
+
+#text-example {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px;
+    border: 1px solid white;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+#text-example div div {
+    height: 45%;
+}
+
+#text-example p {
+    width: 20ch;
+}
+
+#left-align div {
+    border-left: 2px solid #EFB3B3;
+}
+
+#center-align div{
+    position: relative;
+}
+
+#center-align div p {
+    text-align: center;
+}
+
+#center-align div span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    border-right: 2px solid #EFB3B3;
+}
+
+#justified-align div {
+    text-align: justify;
+    border-left: 2px solid #EFB3B3;
+    border-right: 2px solid #EFB3B3;
+}
+
+#right-align div {
+    text-align: right;
+    border-right: 2px solid #EFB3B3;
+}
+
+/* Practice button */
+.practice {
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1250px) {
+    #text-example {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    #text-example div {
+        margin: 0 auto;
+    }
+    #justified-align, #right-align  {
+        padding-top: 5vh;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .big-pink{
+       font-size: 1.9em;
+    }
+    .example img {
+        width: 100%;
+    }
+    .ex-grid img {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .big-pink{
+        font-size: 1.5em;
+    }
+    main {
+        margin: 10vh 10vw;
+    }
+    #text-example {
+        display: grid;
+        grid-template-columns: 100%;
+        padding-top: 0;
+    }
+    #justified-align, #right-align  {
+        padding-top: 7vh;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .big-pink{
+       font-size: 1.2em;
+    }
+    .ex-grid img {
+        margin: 1% auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .big-pink{
+        font-size: 0.7em;
+    }
+    main {
+        margin: 5vh 10vw;
+    }
+}
+

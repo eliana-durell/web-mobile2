@@ -1,0 +1,91 @@
+/* ============================================== */
+/* Base Selectors                                 */
+/* ============================================== */
+h1 {
+    height: clamp(200px, 70vh, 500px);
+    text-indent: -9999em;
+    background: url(../images/banner.png) center no-repeat;
+    background-size: contain;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+h2 img {
+    height: 1em;
+    align-self: stretch;
+}
+
+/* ============================================== */
+/* Class/ID Selectors                             */
+/* ============================================== */
+/* Hero */
+.hero-section {
+    height: 90vh;
+}
+
+/* About Us Section */
+.about-us {
+    margin: 5vh 10vw;
+    color: white;
+}
+
+/* Who Made Section */
+.who-made {
+    margin: 5vh 10vw;
+    color: white;
+}
+
+.person {
+    display: flex;
+    background-color: #EFB3B3;
+    margin: 2vw 0;
+    padding: 2vw;
+}
+
+.person img {
+    width: 15vw;
+    /* height: 20vw; */
+    margin: auto 0;
+
+}
+
+.person-info {
+    padding: 2vw;
+    margin-left: 2vw;
+    color: black;
+}
+
+/* ============================================== */
+/* Media Queries                                  */
+/* ============================================== */
+@media screen and (max-width: 760px) {
+    h1 {
+        height: clamp(200px, 50vh, 300px);
+    }
+    .person {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .person img {
+        width: 30vw;
+        /* height: 40vw; */
+        margin: auto auto;
+    
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .person {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .person img {
+        width: 40vw;
+        /* height: 60vw; */
+        margin: auto auto;
+    }
+}

@@ -1,0 +1,343 @@
+/* ============================================== */
+/* Base Styles                                    */
+/* ============================================== */
+body {
+    margin: 0;
+    background-color: #444B26;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cantata One', sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+
+/* https://nekocalc.com/px-to-rem-converter */
+h1 {
+    font-size: 3rem; /*48px*/
+    line-height: 1.3em;
+}
+
+h2 {
+    font-size: 2.25rem;  /*36px*/
+    line-height: 1.3em;
+}
+
+h3 {
+    font-size: 1.75rem;  /*28px*/
+    line-height: 1.4em;
+}
+
+h4 {
+    font-size: 1.5rem;  /*24px*/
+    line-height: 1.4em;
+}
+
+h5 {
+    font-size: 1.25rem;  /*20px*/
+    line-height: 1.5em;
+}
+
+h6 {
+    font-size: 1.2rem;  /*19.2px*/
+    line-height: 1.5em;
+}
+
+p {
+    font-size: 1.125rem;  /*18px*/
+    line-height: 1.25em;
+    padding-bottom: 3%;
+}
+
+li, a, label {
+    font-size: 1.125rem;  /*18px*/
+    line-height: 1.25em;   
+}
+
+/* Button styles */
+button, .button, .button:link, .button:visited { 
+    /* Remove initial a style */
+    display: block;
+    width: max-content;
+    text-decoration: none;
+
+    /* Font style */
+    font-family: 'Cantata One', sans-serif;
+    font-size: 1.125em;
+    color: black;
+
+    /* Button styles */
+    background-color: #EFB3B3;
+    border-radius: 15px;
+    border: 1px solid #BFCEA6;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+
+    cursor: pointer;
+}
+
+button:hover, .button:hover {
+    background-color: #BFCEA6;
+}
+
+button:active, .button:active {
+    background-color: #1F2E20;
+    color: white;
+}
+
+/* ============================================== */
+/* Nav Bar Styles                                 */
+/* ============================================== */
+header {
+    /* navbar on top of everything even when scrolling */
+    position: sticky;
+    top: 0;
+    z-index: 1; 
+    height: 10vh; /* if change this, change nav height and button height */
+}
+
+nav {
+    display: flex;
+    background-color: #BFCEA6;
+    justify-content: space-between;
+    height: 10vh;           /* if change this, change header height and button height */
+    color: #444B26;
+    
+    /* give some space on the sides */
+    padding-left: 2vw;
+    padding-right: 10vw;
+}
+
+/* LOGO */
+.logo {
+    height: 7vh;
+    padding: 1.5vh 0;
+    margin: 0;
+}
+
+.logo:hover {
+    background-color: #1F2E20;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav>ul {
+    display: flex;
+}
+
+.dropdown {
+    /* center text */
+    display: flex;
+    align-items: center;
+
+    /* used for dropdown list */
+    position: relative;
+
+    /* text styles */
+    font-family: 'Cantata One', sans-serif;
+    font-size: 1.7rem;
+    width: 1em;
+    /* width: fit-content; */
+    padding-left: 0.5em; 
+    transition: width 0.5s;
+}
+
+.expanded {
+    /* when dropdown is expanded */
+    width: 6em;
+}
+
+.dropdown:hover {
+    /* dropdown hover styling */
+    background-color: #1F2E20;
+    color: #f9f9f9;
+}
+
+.links {
+    /* Dropdown container styles */
+    display: none;          /* hidden by default */
+    position: absolute;     /* Position the list */
+    background-color: #f9f9f9;
+    width: 6.5em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.active {
+    display: block;
+    left: 0;
+    top: 10vh;
+}
+
+.links a {
+    /* Dropdown item styles */
+    display: block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: left;
+    color: #444B26;
+    padding: 15px;
+}
+
+.links a:hover {
+    color: white;
+    background-color: #1F2E20;
+    border: 1px solid #BFCEA6;
+}
+
+/* ============================================== */
+/* Footer Styles                                  */
+/* ============================================== */
+footer {
+    background-color: #BFCEA6;
+    margin-top: 15vh;
+    padding: 2vw;
+}
+
+footer h4 {
+    color: black;
+}
+
+.footer-row-1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-around;
+}
+
+.footer-sec {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-sec a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-sec a:hover {
+    color: white;
+}
+
+.footer-sec a:active {
+    text-decoration: underline;
+}
+
+.footer-row-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo {
+    padding-top: 5vh;
+    width: 5vw;
+    height: 5vw;
+    background-color: #BFCEA6;
+}
+
+.footer-btn {
+    margin: 0;
+    padding: 0;
+    width: 5vw;
+    height: 5vw;
+}
+
+.copyright {
+    text-align: center;
+    color: black;
+}
+
+/* ============================================== */
+/* Media Queries                                  */
+/* ============================================== */
+@media screen and (min-width: 1600px) {
+    p, li, a, label, .links a {
+        font-size: 1.4rem;
+    }
+
+    .dropdown {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.25rem; /*36px*/
+    }
+    
+    h2 {
+        font-size: 1.75rem;  /*28px*/
+    }
+    
+    h3 {
+        font-size: 1.5rem;  /*24px*/
+    }
+    
+    h4 {
+        font-size: 1.25rem;  /*20px*/
+    }
+
+    p, li, a, label {
+        font-size: 0.875rem;
+        line-height: 1.5em;
+    }
+
+    nav {
+        padding-right: 0;
+    }
+
+    .dropdown {
+        position: inherit;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+
+    .links {
+        width: 100%;
+    }
+
+    .links a {
+        border: 1px solid #1F2E20;
+    }
+
+    .footer-row-1 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .footer-sec {
+        margin: 2vw;
+    }
+
+    .footer-logo {
+        padding-top: 0vh;
+        width: 10vw;
+        height: 10vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-row-1 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .footer-sec {
+        margin: 2vw;
+    }
+
+    .footer-logo {
+        padding-top: 0vh;
+        width: 15vw;
+        height: 15vw;
+    }
+}
