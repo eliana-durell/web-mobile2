@@ -1,6 +1,8 @@
 # web-mobile2
 This contains exercises, projects, and homework that I did in this class. 
 
+[Github Page](https://eliana-durell.github.io/web-mobile2/index.html)
+
 **NOTE: Github Pages** The following links will not render due to it containing PHP. 
 - Exercise 8 - PHP Forms - Pizza Form
 - Exercise 9 - PHP Comment Form - MySQL
