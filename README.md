@@ -17,5 +17,5 @@ In order to view the sites with PHP click the link below.
 - Exercise 9 - PHP Comment Form - MySQL
 - Final: Comments Page
 
- **NOTE: Website** Due to maintenance on the server (sites involving PHP), they will not render. (July 24, 2025)
+ **NOTE: Website** Due to maintenance on the server links involving PHP  will not render. (July 24, 2025)
  
