@@ -18,3 +18,4 @@ In order to view the sites with PHP click the link below.
 - Final: Comments Page
 
  **NOTE: Website** Due to maintenance on the server (sites involving PHP), they will not render. (July 24, 2025)
+ 
